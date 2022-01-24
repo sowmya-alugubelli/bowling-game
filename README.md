@@ -2,6 +2,10 @@
 
 Bowling is a game where people try to knock down ten pins by rolling a ball. This is an angular repo which includes a page, and algorithm to score a game of bowling for one person.
 
+## Play the game on browser
+
+https://sowmya-alugubelli.github.io/bowling-game/
+
 ## Running on local
 
 ### Prerequisites
