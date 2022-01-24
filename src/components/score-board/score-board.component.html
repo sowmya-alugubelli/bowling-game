@@ -1,0 +1,30 @@
+
+<h2 class="mt-3">Total Score:  {{ totalScore  }} </h2>
+<table class="table table-bordered table-striped mt-2">
+  <thead class="table-light">
+    <tr>
+      <th scope="col">Frame</th>
+      <th scope="col">Roll1</th>
+      <th scope="col">Roll2</th>
+      <th scope="col">Roll3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of scoreBoardData;index as i">
+      <td> {{ i+1 }}</td>
+      <td>
+        <span *ngIf="row[0]!==-1"> {{ row[0] }}</span>
+      </td>
+      <td>
+        <span *ngIf="row[1]!==-1"> {{ row[1] }}</span>
+      </td>
+      <td>
+        <span *ngIf="i==9 && row[2]!==-1"> {{ row[2] }}</span>
+      </td>
+    </tr>
+  </tbody>
+</table> 
+
+
+
+

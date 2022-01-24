@@ -1,0 +1,18 @@
+<div class="container text-center d-flex pins-card mt-2">
+    <div class="w-25 mt-3">
+        <p class="font-weight-bold">Frame - {{ frameCount }}</p>
+        <p class="font-weight-bold">Roll - {{ roll }}</p>
+    </div>
+
+    <div [ngClass]="{'w-75':true,'disable-pins':isDisablePins}">
+        <div class="btn-toolbar mx-auto text-center" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button *ngFor="let pin of pinCountArray;index as i" type="button" class="btn btn-secondary pin-btn"
+                    (click)="knockPin(pin)">
+                    <span class="pin-number">{{ pin }}</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
